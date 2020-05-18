@@ -1,0 +1,22 @@
+[{
+    "caption": "Search Selections on Python Docs (local)",
+    "command": "odyseus_search_html_pages",
+    "args": {
+        "cmd_id": "odyseus_search_python_docs_local"
+    }
+}, {
+    "caption": "Search Selections on Python Docs (on-line)",
+    "command": "odyseus_search_html_pages",
+    "args": {
+        "cmd_id": "odyseus_search_python_docs_online"
+    }
+}, {
+    "caption": "Search Selection on Zeal",
+    "command": "odyseus_search_with_zeal_selection"
+}, {
+    "caption": "Preview reStructuredText",
+    "command": "rste_preview"
+}, {
+    "caption": "-",
+    "id": "diff"
+}]

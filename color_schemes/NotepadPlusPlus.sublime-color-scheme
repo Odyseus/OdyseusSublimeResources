@@ -1,0 +1,374 @@
+{
+    "name": "Notepad-Plus-Plus",
+    "author": "Jeroen van der Ham/Sam Deering/Addons zz, Sergey Kogan. Theme is based on \"Base16 Google Light\" by Seth Wright (http://sethawright.com)",
+    "variables": {
+        "black": "#000000",
+        "black2": "#070707",
+        "black3": "#1c1e21",
+        "black4": "#1d1f21",
+        "blue": "#3366cc",
+        "blue2": "#3971ed",
+        "blue3": "#6699cc",
+        "blue4": "#6782d3",
+        "blue5": "#0033cc",
+        "blue6": "#034d7b",
+        "blue7": "#b7cbf8",
+        "blue8": "#000080",
+        "blue9": "#000090",
+        "blue10": "#0000ff",
+        "blue11": "#291fb7",
+        "blue12": "#8080c0",
+        "cyan": "#66cccc",
+        "cyan2": "#248591",
+        "cyan3": "#198844",
+        "green": "#75d975",
+        "green2": "#008000",
+        "green3": "#99cc99",
+        "grey": "#828a95",
+        "grey2": "#373b41",
+        "grey3": "#c5c8c6",
+        "grey4": "#282a2e",
+        "grey5": "#b4b7b4",
+        "grey6": "#b9b9b9",
+        "grey7": "#8d8d8d",
+        "grey8": "#8c8c8c",
+        "grey9": "#808080",
+        "grey10": "#333333",
+        "grey11": "#555555",
+        "orange": "#ffcc66",
+        "orange2": "#ff8000",
+        "orange3": "#804000",
+        "orange4": "#f99157",
+        "pink": "#ff00ff",
+        "pink2": "#ff0080",
+        "pink3": "#cc99cc",
+        "purple": "#8000ff",
+        "purple2": "#9700cc",
+        "purple3": "#a36ac7",
+        "red": "#990000",
+        "red2": "#ff0000",
+        "red3": "#f2777a",
+        "red4": "#e71a11",
+        "red5": "#cc342b",
+        "red6": "#f02a1d",
+        "red7": "#e0857f",
+        "red8": "#d02000",
+        "red9": "#600000",
+        "red10": "#f96a38",
+        "white": "#ffffff",
+        "white2": "#f0f0f0",
+        "white3": "#e0e0e0",
+        "white4": "#fff2d9",
+        "white5": "#dadaff",
+        "yellow": "#ddb700"
+    },
+    "globals": {
+        "foreground": "var(black)",
+        "background": "var(white)",
+        "caret": "var(black)",
+        "invisibles": "var(grey7)",
+        "line_highlight": "var(white5)",
+        "selection": "var(grey6)",
+        "selection_border": "var(grey11)",
+        "misspelling": "var(red2)",
+        "gutter": "var(white2)",
+        "shadow": "var(black4)",
+        "shadow_width": "42",
+        "guide": "var(grey8)",
+        "active_guide": "var(red2)",
+        "stack_guide": "var(grey8)",
+        "find_highlight": "var(green)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(red2)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(red2)",
+        "tags_foreground": "var(green)",
+        "popup_css": " html { background-color: #B9B9B9; }"
+    },
+    "rules": [{
+        "name": "Bracket Tag",
+        "scope": "brackethighlighter.tag",
+        "foreground": "var(cyan)"
+    }, {
+        "name": "Bracket Curly",
+        "scope": "brackethighlighter.curly",
+        "foreground": "var(pink3)"
+    }, {
+        "name": "Bracket Round",
+        "scope": "brackethighlighter.round",
+        "foreground": "var(orange)"
+    }, {
+        "name": "Bracket Square",
+        "scope": "brackethighlighter.square",
+        "foreground": "var(blue3)"
+    }, {
+        "name": "Bracket Angle",
+        "scope": "brackethighlighter.angle",
+        "foreground": "var(orange4)"
+    }, {
+        "name": "Bracket Quote",
+        "scope": "brackethighlighter.quote",
+        "foreground": "var(green3)"
+    }, {
+        "name": "Bracket Unmatched",
+        "scope": "brackethighlighter.unmatched",
+        "foreground": "var(red3)"
+    }, {
+        "name": "Punctuation",
+        "scope": "markup.list | variable.parameter.function | punctuation.definition.image | punctuation.definition.variable | punctuation.definition.parameters | punctuation.definition.array | punctuation.definition.metadata",
+        "foreground": "var(grey2)"
+    }, {
+        "name": "Classes",
+        "scope": "meta.class.none",
+        "foreground": "var(grey4)"
+    }, {
+        "name": "Strings, Inherited Class",
+        "scope": "constant.other.symbol | markup.inserted | entity.other.inherited-class",
+        "foreground": "var(cyan3)"
+    }, {
+        "name": "Attribute IDs",
+        "scope": "entity.other.attribute-name.id | punctuation.definition.entity | variable.interpolation | keyword.other.special-method | meta.require | support.function.any-method",
+        "foreground": "var(blue2)"
+    }, {
+        "name": "Markup Link, Escape Characters",
+        "scope": "markup.underline.link | constant.other.color | constant.character.escape",
+        "foreground": "var(blue2)",
+        "font_style": "underline"
+    }, {
+        "name": "Selector",
+        "scope": "meta.selector | markup.changed",
+        "foreground": "var(purple3)"
+    }, {
+        "name": "Link Text",
+        "scope": "string.other.link | markup.deleted | meta.link.inline.description | meta.image.inline",
+        "foreground": "var(red5)"
+    }, {
+        "name": "Headings",
+        "scope": "markup.heading",
+        "foreground": "var(red5)",
+        "font_style": "bold"
+    }, {
+        "name": "Italic in Headings",
+        "scope": "markup.heading markup.italic",
+        "font_style": "bold italic"
+    }, {
+        "name": "Bold And Italic",
+        "scope": "markup.bold markup.italic | markup.italic markup.bold",
+        "font_style": "bold italic"
+    }, {
+        "name": "Code",
+        "scope": "markup.raw | meta.dummy.line-break",
+        "background": "var(white2)"
+    }, {
+        "name": "List Items",
+        "scope": "meta.paragraph.list",
+        "foreground": "var(blue6)"
+    }, {
+        "name": "Code",
+        "scope": "markup.raw.inline"
+    }, {
+        "name": "Fenced Code Block",
+        "scope": "markup.raw.block.fenced",
+        "foreground": "var(black3)"
+    }, {
+        "name": "List Punctuation Definition",
+        "scope": "punctuation.definition.list_item.markdown",
+        "foreground": "var(black2)",
+        "font_style": "bold"
+    }, {
+        "name": "Fenced Code Block",
+        "scope": "markup.quote | punctuation.definition.raw.markdown | punctuation.definition.fenced.markdown | variable.language.fenced.markdown | punctuation.definition.blockquote.markdown",
+        "foreground": "var(grey)"
+    }, {
+        "name": "Separator",
+        "scope": "meta.separator",
+        "foreground": "var(grey)",
+        "background": "var(white3)"
+    }, {
+        "name": "Markup strikethrough",
+        "scope": "markup.strikethrough",
+        "foreground": "var(grey5)"
+    }, {
+        "name": "Classes, Boolean, Attributes, Units, Link Url",
+        "scope": "entity.name.class | entity.name.type.class | entity.other.attribute-name.none | keyword.other.unit | meta.link",
+        "foreground": "var(red10)"
+    }, {
+        "name": "Broken",
+        "scope": "invalid.broken",
+        "foreground": "var(black4)",
+        "background": "var(red10)"
+    }, {
+        "name": "Unimplemented",
+        "scope": "invalid.unimplemented",
+        "foreground": "var(black4)",
+        "background": "var(grey3)"
+    }, {
+        "name": "Shell Variable with Background",
+        "scope": "variable.source | variable.parameter | variable.other.normal | variable.other.readwrite | variable.other.special",
+        "foreground": "var(orange2)",
+        "background": "var(white4)",
+        "font_style": "bold"
+    }, {
+        "name": "Variable Background",
+        "scope": "meta.path.rust",
+        "background": "var(white4)"
+    }, {
+        "name": "Number",
+        "scope": "constant.numeric | meta.path.rust",
+        "foreground": "var(orange2)"
+    }, {
+        "name": "CSS Property",
+        "scope": "support.type",
+        "foreground": "var(blue12)",
+        "font_style": "bold"
+    }, {
+        "name": "Regular expression",
+        "scope": "string.regexp",
+        "foreground": "var(pink2)"
+    }, {
+        "name": "Keyword Common",
+        "scope": "keyword.common | constant.language.python | storage.type.function.python | keyword.control.import.python | storage.type.class.python | keyword.control - meta.preprocessor | keyword.other.rust | entity.name.tag | punctuation.definition.tag | keyword.other.first_line_match.sublime-syntax | variable.language.java | constant.language.java | keyword.desktop | keyword.mathematics | meta.diff.range | keyword.operator.word",
+        "foreground": "var(blue10)",
+        "font_style": "bold"
+    }, {
+        "name": "Deprecated",
+        "scope": "invalid.deprecated",
+        "foreground": "var(blue10)",
+        "background": "var(red7)"
+    }, {
+        "name": "Keyword Other",
+        "scope": "keyword.other - keyword.other.documentation",
+        "foreground": "var(blue8)"
+    }, {
+        "name": "Keyword Operator",
+        "scope": "keyword.operator - meta.preprocessor | keyword.brackets | punctuation.section | punctuation.definition - meta.preprocessor - comment | punctuation.terminator - meta.preprocessor | punctuation.accessor - meta.preprocessor | punctuation.separator - meta.preprocessor",
+        "foreground": "var(blue8)",
+        "font_style": "bold"
+    }, {
+        "name": "Bold text",
+        "scope": "boldtext | markup.bold | meta.tag.value.bbcode | constant.language.registers.general-purpose | source.asm.x86_64 entity.name.function | support.function.C99.c | keyword.other.import.java | keyword.other.package.java | entity.name.function.java | entity.name.function.rust | entity.name.function.makefile | entity.name.function.preprocessor | meta.path.rust | markup.list.numbered.bullet | constant.language.boolean.yaml | keyword.other.rust | variable.function.java | support.type.rust | keyword.other.match.sublime-syntax | entity.name.impl.rust | entity.name.struct.rust | meta.property-value.css | keyword.other.unit.css | entity.name.module.rust | punctuation.definition.entity.css | entity.name.enum.rust | entity.other.attribute-name.table.toml | punctuation.definition.keyValuePair.toml | entity.other.attribute-name.table.array.toml | support.function.rust | keyword.command.dosbatch | keyword.other.shell | support.function.builtin.shell | variable.other.makefile",
+        "font_style": "bold"
+    }, {
+        "name": "Underline text",
+        "scope": "markup.underline",
+        "font_style": "underline"
+    }, {
+        "name": "Italic text",
+        "scope": "markup.italic",
+        "font_style": "italic"
+    }, {
+        "name": "Blue text",
+        "scope": "support.type.rust | meta.object-literal | support.class | meta.function.return-type.rust | boldtext | tag | declaration.tag | meta.tag | entity.other",
+        "foreground": "var(blue5)"
+    }, {
+        "name": "Identifier",
+        "scope": "constant.language | support.constant.property-value.css",
+        "foreground": "var(purple2)"
+    }, {
+        "name": "Exception",
+        "scope": "class.exception | meta.inappropriate | keyword.other.import.java | keyword.other.package.java | meta.function.decorator.python | storage.type.annotation.java | string.quoted.double.include",
+        "foreground": "var(red)"
+    }, {
+        "name": "Bold This Keyword",
+        "scope": "variable.language.this",
+        "foreground": "var(red)",
+        "font_style": "bold"
+    }, {
+        "name": "Function Definition",
+        "scope": "function.definition - meta.preprocessor | function.name | meta.annotation.identifier | entity.name.function - entity.name.function.python | variable.other.makefile | entity.other.attribute-name.table.array.toml | meta.tag.table.toml | meta.tag.table.array.toml | meta.tag.value",
+        "foreground": "var(blue9)"
+    }, {
+        "name": "Meta Function",
+        "scope": "keyword.analysis.matlab | meta.function.call | meta.annotation.python | keyword.control.flow.push.sublime-syntax | variable.function.java | keyword.other.python | keyword.command | support.function - meta.preprocessor - support.function.call",
+        "foreground": "var(red9)"
+    }, {
+        "name": "Function Call",
+        "scope": "function.call | keyword.analysis.matlab | meta.function-call - meta.group - meta.preprocessor - meta.function-call.arguments | entity.name.struct.rust | entity.name.struct.rust | entity.name.impl.rust | meta.block.ts entity.name.function.ts | entity.name.module.rust | entity.name.enum.rust | support.macro.rust | meta.function.python | meta.tag.any",
+        "foreground": "var(pink)"
+    }, {
+        "name": "Python Function Call",
+        "scope": "meta.function-call - meta.preprocessor - meta.function-call.arguments",
+        "foreground": "var(pink)"
+    }, {
+        "name": "Comment",
+        "scope": "comment - comment.line.documentation - comment.block.documentation - comment.block.attribute.rust | keyword.command.rem.dosbatch",
+        "foreground": "var(green2)"
+    }, {
+        "name": "Documentation Comment",
+        "scope": "comment.block.documentation | comment.block.python | comment.line.documentation | comment.line.triple-slash",
+        "foreground": "var(cyan2)"
+    }, {
+        "name": "Preprocessor",
+        "scope": "meta.preprocessor | comment.block.attribute.rust | string.quoted.other.lt-gt.include | meta.diff.header | keyword.control.import - keyword.control.import.from.python | entity.name.function.preprocessor",
+        "foreground": "var(orange3)",
+        "font_style": "unbold"
+    }, {
+        "name": "Brace",
+        "scope": "punctuation.section.embedded | brace.html",
+        "foreground": "var(red6)"
+    }, {
+        "name": "Trailing whitespace",
+        "scope": "invalid.deprecated.trailing-whitespace",
+        "background": "color(var(red4) alpha(0))"
+    }, {
+        "name": "Variable",
+        "scope": "variable.parameter.none | variable.definition.none",
+        "foreground": "var(black)"
+    }, {
+        "name": "Bold Tag",
+        "scope": "entity.name.context | storage.function",
+        "foreground": "var(red4)",
+        "font_style": "bold"
+    }, {
+        "name": "Constant",
+        "scope": "constant | variable.other.property.rust",
+        "foreground": "var(blue4)"
+    }, {
+        "name": "Storage",
+        "scope": "storage.modifier | storage.type - meta.function.python - storage.type.class.python - meta.preprocessor | variable.type.AmxxPawn",
+        "foreground": "var(purple)"
+    }, {
+        "name": "Class name",
+        "scope": "class.name",
+        "foreground": "var(blue11)"
+    }, {
+        "name": "XML Declaration",
+        "scope": "tag.preprocessor.xml",
+        "foreground": "var(grey10)"
+    }, {
+        "name": "User-defined constant",
+        "scope": "constant.character | constant.other | string | punctuation.definition.annotation | punctuation.definition.string",
+        "foreground": "var(grey9)"
+    }, {
+        "name": "Tag Attribute Bold",
+        "scope": "other.attribute-name | meta.method-call - meta.group - meta.preprocessor",
+        "foreground": "var(blue)",
+        "font_style": "bold"
+    }, {
+        "name": "Bracket Default",
+        "scope": "brackethighlighter.default",
+        "foreground": "var(red2)"
+    }, {
+        "name": "Illegal",
+        "scope": "invalid.illegal",
+        "foreground": "var(red2)",
+        "background": "var(blue7)"
+    }, {
+        "name": "Invalid",
+        "scope": "invalid",
+        "foreground": "var(red2)",
+        "background": "color(var(red4) alpha(0.3))"
+    }, {
+        "name": "SublimeLinter Error",
+        "scope": "sublimelinter.mark.error | markup.error",
+        "foreground": "var(red8)"
+    }, {
+        "name": "SublimeLinter Gutter Mark",
+        "scope": "sublimelinter.gutter-mark | markup.info",
+        "foreground": "var(white)"
+    }, {
+        "name": "SublimeLinter Warning",
+        "scope": "sublimelinter.mark.warning | markup.warning",
+        "foreground": "var(yellow)"
+    }]
+}

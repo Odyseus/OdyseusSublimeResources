@@ -1,0 +1,50 @@
+[{
+    "caption": "Git Gui",
+    "command": "odyseus_exec_command_on_sidebar_selection",
+    "args": {
+        "cmd_id": "odyseus_open_git_gui_sidebar_context",
+        "dirs": []
+    }
+}, {
+    "caption": "Git History",
+    "command": "odyseus_exec_command_on_sidebar_selection",
+    "args": {
+        "cmd_id": "odyseus_open_git_history_sidebar_context",
+        "dirs": []
+    }
+}, {
+    "caption": "JSHint on folder",
+    "command": "odyseus_exec_command_on_sidebar_selection",
+    "args": {
+        "cmd_id": "odyseus_jshint_directory_sidebar_context",
+        "dirs": []
+    }
+}, {
+    "caption": "Compare folders",
+    "command": "odyseus_exec_command_on_sidebar_selection",
+    "args": {
+        "cmd_id": "odyseus_compare_folders_sidebar_context",
+        "dirs": []
+    }
+}, {
+    "caption": "Compare files",
+    "command": "odyseus_exec_command_on_sidebar_selection",
+    "args": {
+        "cmd_id": "odyseus_compare_files_sidebar_context",
+        "files": []
+    }
+}, {
+    "caption": "Open in terminal",
+    "command": "odyseus_exec_command_on_sidebar_selection",
+    "args": {
+        "cmd_id": "odyseus_open_terminal_sidebar_context",
+        "dirs": []
+    }
+}, {
+    "caption": "Convert snippet to completion",
+    "command": "odyseus_exec_command_on_sidebar_selection",
+    "args": {
+        "cmd_id": "odyseus_convert_snippet_to_completions",
+        "dirs": []
+    }
+}]

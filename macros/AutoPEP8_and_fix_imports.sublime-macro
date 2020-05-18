@@ -1,0 +1,8 @@
+[{
+    "command": "odyseus_fix_python_imports"
+}, {
+    "command": "odyseus_code_formatter",
+    "args": {
+        "cmd_id": "odyseus_autopep8"
+    }
+}]

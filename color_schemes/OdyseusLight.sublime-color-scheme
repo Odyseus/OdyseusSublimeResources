@@ -1,0 +1,651 @@
+{
+    "name": "OdyseusLight",
+    "comments": "Based on Sublime Text's default color scheme called Sixteen by Sublime HQ Pty Ltd, Chris Kempson.",
+    "author": "Odyseus",
+    "variables": {
+        // Various colors
+        "black": "#000",
+        "black2": "#111111",
+        "black3": "#373b41",
+        "blue": "#00f",
+        "blue2": "#291fb7",
+        "blue3": "#0f20f6",
+        "blue4": "#3971ed",
+        "blue5": "#034d7b",
+        "celeste": "#a7caff",
+        "celeste2": "#c9dfff",
+        "green": "#00ff00",
+        "green2": "#4da03a",
+        "green3": "#198844",
+        "green4": "#1cb17e",
+        "grey": "#828a95",
+        "grey2": "#666666",
+        "grey3": "#777777",
+        "grey4": "#d0d0d0",
+        "grey5": "#555555",
+        "greybirdblue": "#398ee7",
+        "orange": "#d47118",
+        "orange2": "#f96a38",
+        "orange3": "#ff8000",
+        "purple": "#bf8dff",
+        "purple2": "#a36ac7",
+        "red": "#f00",
+        "red2": "#ba0000",
+        "red3": "#cc342b",
+        "red4": "#f02a1d",
+        "red5": "#bf4040",
+        "red6": "#bf246f",
+        "white": "#fff",
+        "white2": "#dddddd",
+        "white3": "#e5e5e5",
+        "yellow": "#ffd545",
+        "yellow2": "#ffe792",
+
+        // Predefined Variables overrides
+        "background": "#dddddd",
+        "foreground": "#000000",
+        "accent": "#398ee7",
+        "redish": "#f02a1d",
+        "orangish": "#ff8000",
+        "yellowish": "#ffd545",
+        "greenish": "#4da03a",
+        // "cyanish": "",
+        // "bluish": "",
+        // "purplish": "",
+        // "pinkish": "",
+    },
+    "globals": {
+        // ###############
+        // Global Settings
+        // ###############
+        //
+        // The following global settings go in the object with the globals key.
+
+        // The default background color.
+        "background": "var(white2)",
+
+        // The default color for text.
+        "foreground": "var(black)",
+
+        // The color of the caret.
+        "caret": "var(black)",
+
+        "block_caret": "var(black)",
+
+        // The background color of the line containing the caret. Only used when the
+        // highlight_line setting is enabled..
+        "line_highlight": "var(grey4)",
+
+        // #######
+        // Accents
+        // #######
+
+        // The color to use for the squiggly underline drawn under misspelled words.
+        "misspelling": "var(red)",
+
+        // The color to use for the marker that indicates content has been folded.
+        "fold_marker": "var(yellow2)",
+
+        // The color of the border drawn around the viewport area of the minimap when
+        // the setting draw_minimap_border is enabled. Note that the viewport is
+        // normally only visible on hover, unless the always_show_minimap_viewport setting is enabled.
+        // "minimap_border": "",
+
+        // A color made available for use by the theme. The Default theme uses this
+        // to highlight modified tabs when the highlight_modified_tabs setting is enabled.
+        "accent": "var(greybirdblue)",
+
+        // ###
+        // CSS
+        // ###
+        //
+        // CSS is applied to minihtml content created via the popups and phantoms functionality
+        // that is exposed through the API. Supported CSS properties are discussed in the minihtml
+        // CSS reference.
+        //
+        // Plugins that use minihtml are encouraged to set a unique id attribute on the <body> tag
+        // of generated HTML to allow color schemes to override default plugin styles.
+
+        // CSS passed to popups.
+        // "popup_css": "",
+
+        // CSS passed to phantoms. If not specified, uses popup_css.
+        // "phantom_css": "",
+
+        // ######
+        // Gutter
+        // ######
+
+        // The background color of the gutter.
+        // "gutter": "",
+
+        // The color of line numbers in the gutter.
+        // "gutter_foreground": "",
+
+        // #########
+        // Selection
+        // #########
+
+        // The background color of selected text
+        "selection": "var(celeste)",
+
+        // A color that will override the scope-based text color of the selection
+        // "selection_foreground": "var(black)",
+
+        // The color for the border of the selection
+        "selection_border": "var(celeste)",
+
+        // The width of the selection border, from 0 to 4.
+        // "selection_border_width": "",
+
+        // The background color of a selection in a view that is not currently focused
+        "inactive_selection": "var(celeste2)",
+
+        // A color that will override the scope-based text color of the selection in a view
+        // that is not currently focused
+        // "inactive_selection_foreground": "",
+
+        // The style of corners to use on selections. Options include: round (the default),
+        // cut or square.
+        "selection_corner_style": "round",
+
+        // The radius to use when the selection_corner_style is round or cut.
+        // "selection_corner_radius": "0",
+
+        // ####
+        // Find
+        // ####
+
+        // The border color for "other" matches when the Highlight matches option is selected in
+        // the Find panel. Also used to highlight matches in Find in Files results.
+        "highlight": "var(black)",
+
+        // The background color of text matched by the Find panel.
+        "find_highlight": "var(yellow)",
+
+        // A color that will override the scope-based text color of text matched by the Find panel.
+        "find_highlight_foreground": "var(black)",
+
+        // ######
+        // Guides
+        // ######
+        //
+        // Guides are controlled globally by the draw_indent_guides setting.
+
+        // The color used to draw indent guides. Only used if the option "draw_normal"
+        // is present in the setting indent_guide_options.
+        // "guide": "",
+
+        // The color used to draw the indent guides for the indentation levels containing the caret.
+        // Only used if the option "draw_active" is present in the setting indent_guide_options.
+        // "active_guide": "",
+
+        // The color used to draw the indent guides for the parent indentation levels of the
+        // indentation level containing the caret. Only used if the option "draw_active" is
+        // present in the setting indent_guide_options.
+        // "stack_guide": "",
+
+        // ########
+        // Brackets
+        // ########
+        //
+        // Bracket matching is controlled globally by the match_brackets setting.
+
+        // How brackets are highlighted when the caret is next to one. Accepts a
+        // space-separated list from the following:
+        //     underline
+        //     stippled_underline
+        //     squiggly_underline
+        //     foreground
+        //     bold
+        //     italic
+
+        // "brackets_options": "",
+        // The color to use when drawing the style specified by brackets_options.
+        // "brackets_foreground": "",
+
+        // How brackets are highlighted when the caret is positioned in between a pair of brackets.
+        // Accepts a space-separated list from the following:
+        //     underline
+        //     stippled_underline
+        //     squiggly_underline
+        //     foreground
+        // "bracket_contents_options": "",
+
+        // The color to use when drawing the style specified by brackets_contents_options.
+        // "bracket_contents_foreground": "",
+
+        // ####
+        // Tags
+        // ####
+        //
+        // Tag matching is controlled globally by the match_tags setting.
+
+        // How tags are highlighted when the caret is inside of one. Accepts a space-separated list
+        // from the following:
+        //     underline
+        //     stippled_underline
+        //     squiggly_underline
+        //     foreground
+        //"tags_options": "",
+
+        // The color to use when drawing the style specified by tags_options.
+        // "tags_foreground": "",
+
+        // #######
+        // Shadows
+        // #######
+        //
+        // The color of the shadow used to show when a text area can be horizontally scrolled.
+        "shadow": "var(black2)",
+
+        // The width of the shadow in device-independent pixels.
+        // "shadow_width": "",
+
+        // ################################
+        // Globals that seem to be ignored
+        // ################################
+
+        "invisibles": "var(red6)",
+
+    },
+    "rules": [{
+            "name": "Text",
+            "scope": "variable.parameter",
+            "foreground": "var(orange)",
+            "font_style": "bold"
+        }, {
+            "name": "Comments",
+            "scope": "comment | punctuation.definition.comment",
+            "font_style": "italic",
+            "foreground": "var(green2)"
+        }, {
+            "name": "Punctuation",
+            "scope": "punctuation.definition",
+            "foreground": "var(grey2)",
+            "font_style": "bold"
+        }, {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "var(blue)",
+            "font_style": "bold"
+        }, {
+            "name": "Keywords",
+            "scope": "keyword | keyword.operator.word",
+            "foreground": "var(black)"
+        }, {
+            "name": "Keyword Control",
+            "scope": "keyword.control | keyword.other",
+            "foreground": "var(orange)",
+            "font_style": "bold"
+        }, {
+            "name": "Keyword Operator",
+            "scope": "keyword.operator | declaration.function.operator | meta.preprocessor.c.include",
+            "foreground": "var(blue)"
+        }, {
+            "name": "Variables",
+            "scope": "variable",
+            "foreground": "var(black)"
+        }, {
+            "name": "Function Call",
+            "scope": "meta.function-call",
+            "foreground": "var(blue)"
+        }, {
+            "name": "Functions",
+            "scope": "entity.name.function",
+            "foreground": "var(blue)"
+        }, {
+            "name": "Classes",
+            "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
+            "foreground": "var(blue2)",
+            "font_style": "bold"
+        }, {
+            "name": "Storage",
+            "scope": "storage",
+            "font_style": "bold",
+            "foreground": "var(red6)"
+        }, {
+            "name": "Storage Type",
+            "scope": "storage.type",
+            "font_style": "bold"
+        }, {
+            "name": "Support Functions",
+            "scope": "support.function",
+            "foreground": "var(blue)"
+        }, {
+            "name": "Class Variable",
+            "scope": "variable.other | variable.js | punctuation.separator.variable",
+            "foreground": "var(black)"
+        }, {
+            "name": "Support Classes",
+            "scope": "support.class",
+            "foreground": "var(black)"
+        }, {
+            "name": "Support Constants",
+            "scope": "support.constant",
+            "foreground": "var(black)"
+        }, {
+            "name": "CSS Support Constants",
+            "scope": "source.css support.constant",
+            "foreground": "var(green4)"
+        }, {
+            "name": "Strings | Inherited Class",
+            "scope": "string | entity.other.inherited-class",
+            "foreground": "var(grey2)"
+        }, {
+            "name": "Misc Punctuation",
+            "scope": "punctuation.separator | punctuation.terminator | punctuation.accessor",
+            "foreground": "var(black)"
+        }, {
+            "name": "Misc Punctuation",
+            "scope": "punctuation.section",
+            "foreground": "var(blue)",
+            "font_style": "bold",
+        }, {
+            "name": "Strings Punctuation",
+            "scope": "string punctuation.definition.string",
+            "foreground": "var(grey2)"
+        }, {
+            "name": "Integers",
+            "scope": "constant.numeric",
+            "foreground": "var(blue3)"
+        }, {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(red2)"
+        }, {
+            "name": "Constants",
+            "scope": "constant",
+            "foreground": "var(black)",
+            "font_style": "bold"
+        }, {
+            "name": "Tags",
+            "scope": "entity.name.tag",
+            "foreground": "var(blue2)",
+            "font_style": "bold"
+        }, {
+            "name": "Attributes",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(red6)",
+            "font_style": "bold"
+        }, {
+            "name": "User-defined constant",
+            "scope": "constant.character | constant.other",
+            "foreground": "var(red2)"
+        }, {
+            "name": "Regular Expressions",
+            "scope": "string.regexp",
+            "foreground": "var(blue4)"
+        }, {
+            "name": "Regular Expressions Operator",
+            "scope": "string.regexp keyword.operator",
+            "foreground": "var(blue)"
+        }, {
+            "name": "Escape Characters",
+            "scope": "constant.character.escape",
+            "foreground": "var(red2)"
+        }, {
+            "name": "YAML String",
+            "scope": "source.yaml string.unquoted",
+            "foreground": "var(grey5)"
+        }, {
+            "name": "Embedded",
+            "scope": "punctuation.section.embedded",
+            "foreground": "var(red4)"
+        }, {
+            "name": "Embedded",
+            "scope": "variable.interpolation",
+            "foreground": "var(red4)"
+        }, {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(red4)"
+        }, {
+            "name": "Invalid Illegal",
+            "scope": "invalid.illegal",
+            "foreground": "var(red4)"
+        }, {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(orange)"
+        },
+        /*{
+            // This sets bold to everything.
+            // Commented out to force myself not to set everything to bold. LOL
+            "name": "Normal Variable",
+            "font_style": "bold",
+            "foreground": "var(black)"
+        },*/
+        {
+            "name": "Markdown Normal",
+            "scope": "markdown",
+            "font_style": "normal",
+            "foreground": "var(black)"
+        },
+
+        // <!-- START Scopes used by WordHighlight -->
+        {
+            "name": "OdyseusColorsSelectedWordMatches",
+            "scope": "ody_custom.color.word_highlight",
+            "background": "color(var(orange3) alpha(0.67))",
+            "foreground": "var(black)"
+        },
+        // <!-- END Scopes used by WordHighlight -->
+        // <!-- START Scopes used by BracketHighlighter -->
+        {
+            "name": "OdyseusColorsBracketsMatchesDefault",
+            "scope": "ody_custom.color.brackethighlighter.default",
+            "foreground": "var(green)"
+        }, {
+            "name": "OdyseusColorsBracketsMatchesBrackets",
+            "scope": "ody_custom.color.brackethighlighter.brackets",
+            "background": "var(green)",
+            "foreground": "var(black)"
+        }, {
+            "name": "OdyseusColorsBracketsMatchesUnmatched",
+            "scope": "ody_custom.color.brackethighlighter.unmatched",
+            "background": "var(white)",
+            "foreground": "var(red)"
+        }, {
+            "name": "OdyseusColorsBracketsMatchesTag",
+            "scope": "ody_custom.color.brackethighlighter.tag",
+            "background": "var(purple)",
+            "foreground": "var(black)"
+        },
+        // <!-- END Scopes used by BracketHighlighter -->
+        // <!-- START Scopes used by SublimeLinter -->
+        {
+            "name": "SublimeLinter Error",
+            "scope": "sublimelinter.mark.error",
+            "foreground": "var(red)"
+        }, {
+            "name": "SublimeLinter Warning",
+            "scope": "sublimelinter.mark.warning",
+            "foreground": "var(yellow)"
+        }, {
+            "name": "SublimeLinter Gutter Mark",
+            "scope": "sublimelinter.gutter-mark",
+            "foreground": "var(white)"
+        }, {
+            "name": "region.whitish",
+            "scope": "region.whitish",
+            "foreground": "var(white)"
+        },
+        // <!-- END Scopes used by SublimeLinter -->
+
+        // <!-- START Scopes used MOSTLY by Markdown syntax -->
+        {
+            "name": "Markdown Paragraph",
+            "scope": "meta.paragraph",
+            "font_style": "normal"
+        }, {
+            "name": "Headings",
+            "scope": "markup.heading | punctuation.definition.heading",
+            "foreground": "var(red3)",
+            "font_style": "bold"
+        }, {
+            "name": "Markup Bold",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        }, {
+            "name": "Punctuation Definition Bold",
+            "scope": "punctuation.definition.bold",
+            "foreground": "var(black)"
+        }, {
+            "name": "Italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        }, {
+            "name": "Bold And Italic",
+            "scope": "markup.bold markup.italic | markup.italic markup.bold | markup.bold_italic",
+            "font_style": "bold italic"
+        }, {
+            "name": "Code",
+            "scope": "markup.raw",
+            "background": "var(white3)"
+        }, {
+            "name": "Manual line break",
+            "scope": "meta.dummy.line-break",
+            "background": "var(white3)"
+        }, {
+            "name": "List Items",
+            "scope": "meta.paragraph.list",
+            "foreground": "var(blue5)"
+        }, {
+            "name": "Fenced Code Block",
+            "scope": "markup.raw.block.fenced",
+            "font_style": "normal",
+            "foreground": "var(black3)"
+        }, {
+            "name": "Fenced Code Block",
+            "scope": "punctuation.definition.raw.markdown | punctuation.definition.fenced.markdown | variable.language.fenced.markdown",
+            "foreground": "var(grey)"
+        }, {
+            "name": "Link Url",
+            "scope": "meta.link",
+            "foreground": "var(orange2)"
+        }, {
+            "name": "Lists",
+            "scope": "markup.list",
+            "foreground": "var(black3)"
+        }, {
+            "name": "Punctuation Definition Italic",
+            "scope": "punctuation.definition.italic",
+            "foreground": "var(black)"
+        }, {
+            "name": "Code",
+            "scope": "markup.raw",
+            "background": "var(white3)"
+        }, {
+            "name": "Code",
+            "scope": "markup.raw.inline",
+            "background": "var(white3)",
+            "foreground": "var(red5)"
+        }, {
+            "name": "Strings Punctuation",
+            "scope": "markup.raw.inline punctuation.definition.raw",
+            "foreground": "var(grey)"
+        }, {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "background": "var(white3)",
+            "foreground": "var(grey)",
+            "font_style": "bold"
+        }, {
+            "name": "Link Text",
+            "scope": "string.other.link",
+            "font_style": "underline",
+            "foreground": "var(red3)"
+        }, {
+            "name": "Markup.link",
+            "scope": "markup.underline.link",
+            "font_style": "underline",
+            "foreground": "var(blue4)"
+        }, {
+            "name": "Lists",
+            "scope": "punctuation.definition.list_item | markup.list.numbered.bullet",
+            "font_style": "bold",
+            "foreground": "var(black)"
+        }, {
+            "name": "Quotes",
+            "scope": "punctuation.definition.blockquote",
+            "foreground": "var(grey)"
+        }, {
+            "name": "Link/Image Punctuation",
+            "scope": "punctuation.definition.image | punctuation.definition.link | punctuation.definition.metadata",
+            "font_style": "bold",
+            "foreground": "var(orange2)"
+        }, {
+            "name": "Strings Punctuation",
+            "scope": "punctuation.definition.string",
+            "font_style": "bold"
+        }, {
+            "name": "diff.header",
+            "scope": "meta.diff.header",
+            "font_style": "bold",
+            "foreground": "var(black)"
+        }, {
+            "scope": "markup.changed | punctuation.definition.changed.diff",
+            "foreground": "var(orange)",
+            "background": "color(var(orange) alpha(0.05))",
+            "foreground_adjust": "l(+ 5%)"
+        }, {
+            "scope": "markup.deleted | punctuation.definition.deleted.diff | meta.diff.header.from-file | punctuation.definition.from-file",
+            "foreground": "var(red4)",
+            "background": "color(var(red4) alpha(0.05))",
+            "foreground_adjust": "l(+ 5%)"
+        }, {
+            "scope": "markup.inserted | punctuation.definition.inserted.diff | meta.diff.header.to-file | punctuation.definition.to-file",
+            "foreground": "var(green3)",
+            "background": "color(var(green3) alpha(0.05))",
+            "foreground_adjust": "l(+ 5%)"
+        }, {
+            "scope": "(meta.diff.range | punctuation.definition.range.diff) - (entity - punctuation)",
+            "font_style": "bold",
+            "foreground": "var(blue4)"
+        },
+        // <!-- END Scopes used MOSTLY by Markdown syntax -->
+        // <!-- START Scopes used Find in files syntax -->
+        {
+            "scope": "variable.total_files_count.find-in-files",
+            "foreground": "var(blue)",
+            "font_style": "bold"
+        }, {
+            "scope": "string.query.find-in-files",
+            "foreground": "var(green4)",
+            "font_style": "bold"
+        }, {
+            "scope": "variable.matched_count.find-in-files",
+            "foreground": "var(green4)",
+            "font_style": "bold"
+        }, {
+            "scope": "variable.matched_files_count.find-in-files",
+            "foreground": "var(blue)",
+            "font_style": "bold"
+        }, {
+            "scope": "variable.no_matches.find-in-files",
+            "foreground": "var(red)",
+            "font_style": "bold"
+        }, {
+            "scope": "constant.numeric.line-number.find-in-files",
+            "foreground": "color(var(grey2) alpha(0.2))"
+        }, {
+            "scope": "match.find-in-files",
+            "background": "color(var(yellow) alpha(0.3))"
+        }, {
+            "scope": "constant.numeric.line-number.match.find-in-files",
+            "foreground": "var(red6)"
+        }, {
+            "scope": "punctuation.line-number.match.find-in-files",
+            "foreground": "var(red6)"
+        }, {
+            "scope": "entity.name.filename.find-in-files",
+            "foreground": "var(white)",
+            "background": "var(blue4)"
+        }, {
+            "scope": "footer.find-in-files",
+            "background": "color(var(grey) alpha(0.13))"
+        },
+        // <!-- END Scopes used Find in files syntax -->
+    ]
+}

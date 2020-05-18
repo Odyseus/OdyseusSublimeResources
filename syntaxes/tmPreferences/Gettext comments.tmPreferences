@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist
+          PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Comments</string>
+        <key>scope</key>
+        <string>source.po | source.potx | source.pot</string>
+        <key>settings</key>
+        <dict>
+            <key>shellVariables</key>
+            <array>
+                <dict>
+                    <key>name</key>
+                    <string>TM_COMMENT_START</string>
+                    <key>value</key>
+                    <string>#~ </string>
+                </dict>
+            </array>
+        </dict>
+        <key>uuid</key>
+        <string>cb3a425e-e669-4210-be72-f6c0290f22f5</string>
+    </dict>
+</plist>

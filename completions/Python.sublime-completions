@@ -1,0 +1,46 @@
+{
+    "scope": "source.python",
+    "completions": [{
+        "trigger": "hcli\tCinnamon tools help creator - Markdown header",
+        "contents": "\"- %s\" % _(\"${1:}\"),"
+    }, {
+        "trigger": "hch\tCinnamon tools help creator - Markdown header",
+        "contents": "\"### %s\" % _(\"${1:}\"),"
+    }, {
+        "contents": "for ${1:x} in ${2:xrange(1,10)}:\n    ${0:pass}",
+        "trigger": "for\tFor Loop"
+    }, {
+        "contents": "try:\n    ${1:pass}\nexcept ${2:Exception} as ${3:e}:\n    ${4:raise $3}\nfinally:\n    ${5:pass}",
+        "trigger": "try\tTry/Except/Finally"
+    }, {
+        "contents": "def ${1:function}($2):\n    ${0:pass}",
+        "trigger": "def\tFunction"
+    }, {
+        "contents": "if __name__ == \"__main__\":\n    ${1:main()}$0",
+        "trigger": "ifmain\tif __name__ == \"__main__\""
+    }, {
+        "contents": "class ${1:ClassName}(${2:object}):\n    ${3/.+/\"\"\"/}${3:docstring for $1}${3/.+/\"\"\"\\n/}${3/.+/\\t/}def __init__(self${4/([^,])?(.*)/(?1:, )/}${4:arg}):\n        ${5:super($1, self).__init__()}\n${4/(\\A\\s*,\\s*\\Z)|,?\\s*([A-Za-z_][a-zA-Z0-9_]*)\\s*(=[^,]*)?(,\\s*|$)/(?2:\\t\\tself.$2 = $2\\n)/g}      $0",
+        "trigger": "class\tNew Class"
+    }, {
+        "contents": "try:\n    ${1:pass}\nexcept${2: ${3:Exception} as ${4:e}}:\n    ${5:raise}\nelse:\n    ${6:pass}\nfinally:\n    ${7:pass}",
+        "trigger": "try\tTry/Except/Else/Finally"
+    }, {
+        "contents": "def ${1:function}(self${2}):\n    ${0:pass}",
+        "trigger": "defs\tMethod"
+    }, {
+        "contents": "try:\n    ${1:pass}\nexcept ${2:Exception} as ${3:e}:\n    ${4:raise $3}\nelse:\n    ${5:pass}",
+        "trigger": "try\tTry/Except/Else"
+    }, {
+        "contents": "try:\n    ${1:pass}\nexcept ${2:Exception} as ${3:e}:\n    ${4:raise $3}",
+        "trigger": "try\tTry/Except"
+    }, {
+        "contents": "if ${1:$SELECTION}:\n    ${0:pass}",
+        "trigger": "if\tIf Condition"
+    }, {
+        "contents": "while ${1:$SELECTION}:\n    ${0:pass}",
+        "trigger": "while\tWhile Loop"
+    }, {
+        "contents": "__${1:init}__",
+        "trigger": "__\t__magic__"
+    }]
+}

@@ -1,0 +1,154 @@
+{
+    "scope": "source.css | source.less | source.scss | source.stylus",
+    "completions": [{
+        "trigger": "fix\tCSS - position: fixed;",
+        "contents": "position: fixed;"
+    }, {
+        "trigger": "tex\tCSS - text-shadow: ;",
+        "contents": "text-shadow: ${1:horizontal-offset} ${2:vertical-offset} ${3:blur-radius} ${4:hsla(0,0%,0%,.25)};"
+    }, {
+        "trigger": "box\tCSS - box-sizing: border-box;",
+        "contents": "-webkit-box-sizing: border-box;\n   -moz-box-sizing: border-box;\n        box-sizing: border-box;"
+    }, {
+        "trigger": "hyp\tCSS - hyphens: auto;",
+        "contents": "-webkit-hyphens: auto;\n   -moz-hyphens: auto;\n    -ms-hyphens: auto;\n        hyphens: auto;"
+    }, {
+        "trigger": "key\tCSS - @keyframes {}",
+        "contents": "@-webkit-keyframes $1 {\n\t0% { $2 }\n\t100% { $3 }\n}\n@-moz-keyframes $1 {\n\t0% { $2 }\n\t100% { $3 }\n}\n@-ms-keyframes $1 {\n\t0% { $2 }\n\t100% { $3 }\n}\n@-o-keyframes $1 {\n\t0% { $2 }\n\t100% { $3 }\n}\n@keyframes $1 {\n\t0% { $2 }\n\t100% { $3 }\n}"
+    }, {
+        "trigger": "aut\tCSS - margin: 0 auto;",
+        "contents": "margin: ${1:0} auto;$2"
+    }, {
+        "trigger": "`\tCSS - /* -----*/",
+        "contents": "/* $1 **************************************************/$2"
+    }, {
+        "trigger": "hid\tCSS - overflow: hidden;",
+        "contents": "overflow: hidden;"
+    }, {
+        "trigger": "ani\tCSS - animation: ;",
+        "contents": "-webkit-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate};\n   -moz-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate};\n    -ms-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate};\n     -o-animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate};\n        animation: ${1:name} ${2:duration} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)} ${4:delay} ${5:infinite|<number>} ${6:normal|alternate};"
+    }, {
+        "trigger": "cur\tCSS - cursor: pointer;",
+        "contents": "cursor: ${1:auto|crosshair|default|pointer|move|e-resize|ne-resize|-resize|n-resize|se-resize|sw-resize|s-resize|w-resize|text|wait|help|progress};"
+    }, {
+        "trigger": "gra\tCSS - background-image: linear-gradient();",
+        "contents": "background-image: -webkit-linear-gradient(${1:top|left}, ${2:hsla(0,0%,100%,.1)}, ${3:hsla(0,0%,0%,.1)});\nbackground-image:    -moz-linear-gradient(${1:top|left}, ${2:hsla(0,0%,100%,.1)}, ${3:hsla(0,0%,0%,.1)});\nbackground-image:     -ms-linear-gradient(${1:top|left}, ${2:hsla(0,0%,100%,.1)}, ${3:hsla(0,0%,0%,.1)});\nbackground-image:      -o-linear-gradient(${1:top|left}, ${2:hsla(0,0%,100%,.1)}, ${3:hsla(0,0%,0%,.1)});\nbackground-image:         linear-gradient(${1:top|left}, ${2:hsla(0,0%,100%,.1)}, ${3:hsla(0,0%,0%,.1)});"
+    }, {
+        "trigger": "cf\tCSS - clearfix",
+        "contents": ".cf:after,\n.cf:before {\n\tcontent: '';\n\tdisplay: table;\n}\n.cf:after {\n\tclear: both;\n}\n.cf {\n\tzoom: 1;\n}"
+    }, {
+        "trigger": "bor\tCSS - border-radius: ;",
+        "contents": "border-radius: $1;"
+    }, {
+        "trigger": "rig\tCSS - right: 0;",
+        "contents": "right: ${1:0};$2"
+    }, {
+        "trigger": "cen\tCSS - text-align: center;",
+        "contents": "text-align: center;"
+    }, {
+        "trigger": "wra\tCSS - word-wrap",
+        "contents": "overflow-wrap: break-word;\nword-wrap: break-word;"
+    }, {
+        "trigger": "act\tCSS - :active",
+        "contents": "$1:active {\n\t$2\n}"
+    }, {
+        "trigger": "top\tCSS - top: 0;",
+        "contents": "top: ${1:0};$2"
+    }, {
+        "trigger": "upp\tCSS - text-transform: uppercase;",
+        "contents": "text-transform: uppercase;"
+    }, {
+        "trigger": "ita\tCSS - font-style: italic;",
+        "contents": "font-style: italic;"
+    }, {
+        "trigger": "lin\tCSS - line-height: 1.5;",
+        "contents": "line-height: ${1:1.5};$2"
+    }, {
+        "trigger": "lef\tCSS - left: 0;",
+        "contents": "left: ${1:0};$2"
+    }, {
+        "trigger": "hov\tCSS - :hover, :focus",
+        "contents": "$1:hover,\n$1:focus {\n\t$2\n}"
+    }, {
+        "trigger": "r\tCSS - rgba()",
+        "contents": "rgba(${1:0},${2:0},${3:0},${4:1})"
+    }, {
+        "trigger": "amp\tCSS - .amp {}",
+        "contents": ".amp {\n    font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;\n    font-style: italic;\n    font-weight: normal;\n}"
+    }, {
+        "trigger": "bef\tCSS - :before",
+        "contents": "$1:before {\n\tcontent: '';\n\t$2\n}"
+    }, {
+        "trigger": "mar\tCSS - margin: 0;",
+        "contents": "margin: ${1:0};$2"
+    }, {
+        "trigger": "pad\tCSS - padding: 0;",
+        "contents": "padding: ${1:0};$2"
+    }, {
+        "trigger": "tap\tCSS - tap-highlight-color: hsla(0,0%,0%,.5);",
+        "contents": "-webkit-tap-highlight-color: ${1:hsla(0,0%,0%,.5)};\n        tap-highlight-color: ${1:hsla(0,0%,0%,.5)};"
+    }, {
+        "trigger": "h\tCSS - hsla()",
+        "contents": "hsla(${1:0},${2:0}%,${3:0}%,${4:1})"
+    }, {
+        "trigger": "pla\tCSS - animation-play-state: ;",
+        "contents": "-webkit-animation-play-state: ${1:running|paused};\n   -moz-animation-play-state: ${1:running|paused};\n    -ms-animation-play-state: ${1:running|paused};\n     -o-animation-play-state: ${1:running|paused};\n        animation-play-state: ${1:running|paused};"
+    }, {
+        "trigger": "non\tCSS - text-decoration: none;",
+        "contents": "text-decoration: none;"
+    }, {
+        "trigger": "inl\tCSS - display: inline-block;",
+        "contents": "display: inline-block;\nvertical-align: top;\n${1:zoom: 1;${2: /* Fix for IE7 */}\n*display: inline;${2: /* Fix for IE7 */}}$3"
+    }, {
+        "trigger": "ser\tCSS - font-family: serif;",
+        "contents": "font-family: ${1:<font-name>,} serif;$2"
+    }, {
+        "trigger": "san\tCSS - font-family: sans-serif;",
+        "contents": "font-family: ${1:<font-name>,} sans-serif;$2"
+    }, {
+        "trigger": "fon\tCSS - font: 1em/1.5 sans-serif;",
+        "contents": "font: ${1:normal|italic|oblique} ${2:normal|small-caps} ${3:normal|bold|bolder|lighter} ${4:1em}/${5:1.5} ${6:sans-serif};"
+    }, {
+        "trigger": "con\tCSS - content: '';",
+        "contents": "content: '$1';$2"
+    }, {
+        "trigger": "rel\tCSS - position: relative;",
+        "contents": "position: relative;"
+    }, {
+        "trigger": "fil\tCSS - animation-fill-mode: ;",
+        "contents": "-webkit-animation-fill-mode: ${1:none|forwards|backwards|both};\n   -moz-animation-fill-mode: ${1:none|forwards|backwards|both};\n    -ms-animation-fill-mode: ${1:none|forwards|backwards|both};\n     -o-animation-fill-mode: ${1:none|forwards|backwards|both};\n        animation-fill-mode: ${1:none|forwards|backwards|both};"
+    }, {
+        "trigger": "transform\tCSS - transform: ;",
+        "contents": "-webkit-transform: $1;\n   -moz-transform: $1;\n    -ms-transform: $1;\n     -o-transform: $1;\n        transform: $1;"
+    }, {
+        "trigger": "t\tCSS - hsla()",
+        "contents": "transparent"
+    }, {
+        "trigger": "bac\tCSS background: #fff url('') 0 0 repeat;",
+        "contents": "background: ${1:#fff} url('$2') ${3:0} ${4:0} ${5:repeat|repeat-x|repeat-y|no-repeat|inherit|round|space};"
+    }, {
+        "trigger": "transition\tCSS - transition: ;",
+        "contents": "-webkit-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)};\n   -moz-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)};\n    -ms-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)};\n     -o-transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)};\n        transition: ${1:all} ${2:.25s} ${3:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)};"
+    }, {
+        "trigger": "med\tCSS - @media {}",
+        "contents": "@media (min-width: $1) {\n\t$2\n}"
+    }, {
+        "trigger": "bot\tCSS - bottom: 0;",
+        "contents": "bottom: ${1:0};$2"
+    }, {
+        "trigger": "bol\tCSS - font-weight: bold;",
+        "contents": "font-weight: bold;"
+    }, {
+        "trigger": "abs\tCSS - position: absolute;",
+        "contents": "position: absolute;"
+    }, {
+        "trigger": "blo\tCSS - display: block;",
+        "contents": "display: block;"
+    }, {
+        "trigger": "aft\tCSS - :after",
+        "contents": "$1:after {\n\tcontent: '';\n\t$2\n}"
+    }, {
+        "trigger": "sha\tCSS - box-shadow: ;",
+        "contents": "box-shadow: ${1:horizontal-offset} ${2:vertical-offset} ${3:blur-radius} ${4:spread-distance} ${5:hsla(0,0%,0%,.25)};"
+    }]
+}

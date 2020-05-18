@@ -1,0 +1,7 @@
+[{
+    "caption": "OdyseusPlugins: Convert to HTML5",
+    "command": "odyseus_code_formatter",
+    "args": {
+        "cmd_id": "odyseus_convert_to_html5"
+    }
+}]

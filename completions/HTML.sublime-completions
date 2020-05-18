@@ -1,0 +1,88 @@
+{
+    "scope": "text.html",
+    "completions": [{
+        "trigger": "style\tHTML - Stylesheet link",
+        "contents": "<link rel=stylesheet href=\"$1\">$2"
+    }, {
+        "trigger": "fig\tHTML - Figure",
+        "contents": "<figure>\n    <img src=\"$1\" alt=\"$2\">\n    <figcaption>$3</figcaption>\n</figure>$4"
+    }, {
+        "trigger": "inp:submit\tHTML - Input:submit",
+        "contents": "<input type=\"submit\" value=\"$1\">"
+    }, {
+        "trigger": "html5\tHTML - HTML template",
+        "contents": "<!doctype html>\n<html class=\"no-js\" lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n    <title>Title</title>\n    <meta name=\"description\" content=\"Description\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"assets/img/favicon.svg\">\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"assets.css\">\n    <script type=\"text/javascript\" src=\"assets.js\"></script>\n</head>\n\n<body>\n\n    <!-- Add your site or application content here -->\n    <p>Hello world! This is an HTML5 template.</p>\n\n    <script type=\"text/javascript\" src=\"assets/js/jquery-3.2.1.min.js\"></script>\n</body>\n\n</html>"
+    }, {
+        "trigger": "nav2\tHTML - Navigation object",
+        "contents": "<nav class=\"$1\">\n    <ul>\n        <li><a href=\"#\">$2</a></li>\n        <li><a href=\"#\">$3</a></li>\n        <li><a href=\"#\">$4</a></li>\n        <li><a href=\"#\">$5</a></li>\n    </ul>\n</nav>$6"
+    }, {
+        "trigger": "comm\tHTML - Comment",
+        "contents": "<!-- $1 -->$2"
+    }, {
+        "trigger": "ul\tHTML - Unordered list",
+        "contents": "<ul>\n    <li>$1</li>\n    <li>$2</li>\n    <li>$3</li>\n    <li>$4</li>\n</ul>$5"
+    }, {
+        "trigger": "dummy\tHTML - Dummy text",
+        "contents": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. \"What's happened to me? \" he thought."
+    }, {
+        "trigger": "jquery\tHTML - Include jQuery",
+        "contents": "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js\"></script>\n<script>window.jQuery || document.write('<script src=\"js/vendor/jquery-1.8.3.min.js\"><\\/script>')</script>"
+    }, {
+        "trigger": "doctype\tHTML - HTML foundation",
+        "contents": "<!doctype html>\n<html>\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"description\" content=\"$1\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <title>${2:Untitled}</title>\n        <link rel=\"stylesheet\" href=\"css/style.css\">\n        <link rel=\"author\" href=\"humans.txt\">\n    </head>\n    <body>\n        $3\n        <script src=\"js/main.js\"></script>\n    </body>\n</html>"
+    }, {
+        "trigger": "ga2\tHTML - New Google Analytics",
+        "contents": "<script>\n    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n   \n    ga('create', '${1:UA-XXXX-X}');\n    ga('send', 'pageview');\n</script>$2"
+    }, {
+        "trigger": "ol\tHTML - Ordered list",
+        "contents": "<ol>\n    <li>$1</li>\n    <li>$2</li>\n    <li>$3</li>\n    <li>$4</li>\n</ol>$5"
+    }, {
+        "trigger": "css\tHTML - Style tag",
+        "contents": "<style type=\"text/css\">$1</style>"
+    }, {
+        "trigger": "inp:text\tHTML - Input:text",
+        "contents": "<input type=\"text\">$1"
+    }, {
+        "trigger": "script\tHTML - Script",
+        "contents": "<script src=\"$1\"></script>$2"
+    }, {
+        "trigger": "meta\tHTML - Meta tags",
+        "contents": "<meta charset=utf-8>\n<meta name=description content=\"$1\">\n<meta name=viewport content=\"width=device-width, initial-scale=1\">$2"
+    }, {
+        "trigger": "inp:radio\tHTML - Input:radio",
+        "contents": "<input type=\"radio\">$1"
+    }, {
+        "trigger": "cond\tHTML - Conditional comment",
+        "contents": "<!--[if ${1:lt IE 9}]>\n    <link rel=stylesheet href=\"${2:css/ie.css\">}\n<![endif]-->$3"
+    }, {
+        "trigger": "lorem\tHTML - Lorem Ipsum",
+        "contents": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }, {
+        "trigger": "inp:pass\tHTML - Input:password",
+        "contents": "<input type=\"password\">$1"
+    }, {
+        "trigger": "a\tHTML - Anchor",
+        "contents": "<a href=\"$1\">$2</a>$3"
+    }, {
+        "trigger": "inp:tel\tHTML - Input:tel",
+        "contents": "<input type=\"tel\">$1"
+    }, {
+        "trigger": "img\tHTML - Image",
+        "contents": "<img src=\"$1\" alt=\"$2\">$3"
+    }, {
+        "trigger": "shiv\tHTML - HTML5 shiv",
+        "contents": "<!--[if lt IE 9]>\n    <script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n<![endif]-->"
+    }, {
+        "trigger": "inp:check\tHTML - Input:checkbox",
+        "contents": "<input type=\"checkbox\">$1"
+    }, {
+        "trigger": "inp:email\tHTML - Input:email",
+        "contents": "<input type=\"email\">$1"
+    }, {
+        "trigger": "ga\tHTML - Google Analytics",
+        "contents": "<script>\n    var _gaq = [['_setAccount', '${1:UA-XXXXX-X}'], ['_trackPageview']];\n    (function(d, t) {\n        var g = d.createElement(t),\n            s = d.getElementsByTagName(t)[0];\n        g.src = '//www.google-analytics.com/ga.js';\n        s.parentNode.insertBefore(g, s);\n    }(document, 'script'));\n</script>$2"
+    }, {
+        "trigger": "nav\tHTML - Navigation object (inline-block)",
+        "contents": "<nav class=\"$1\">\n    <ul>\n        <li><a href=\"#\">$2</a></li><!--\n     --><li><a href=\"#\">$3</a></li><!--\n     --><li><a href=\"#\">$4</a></li><!--\n     --><li><a href=\"#\">$5</a></li>\n    </ul>\n</nav>$6"
+    }]
+}

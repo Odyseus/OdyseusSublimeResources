@@ -1,0 +1,91 @@
+%YAML 1.2
+---
+# https://github.com/poucotm/Log-Highlight
+# http://www.sublimetext.com/docs/3/syntax.html
+# The MIT License (MIT)
+
+# Copyright (c) 2016 Yongchan Jeon (Kris) <poucotm@gmail.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+name: Log files
+file_extensions:
+    - log
+    - .xsession-errors
+    - syslog
+scope: source.loghighlight
+contexts:
+    main:
+        - match: '^Error-\['
+          push:
+              - meta_scope: invalid.illegal
+              - match: '^\s*[\n]'
+                pop: true
+              - include: error_link
+              - include: error_quote
+        - match: '^(["'']?[\w\d\:\\/\.\-\=]+\.\w+[\w\d]*["'']?\s*[,:on line\(]{1,9}\s*\d+\)?)?[^\r\n]*?(?i)error'
+          captures:
+              1: invalid.illegal.link
+          push:
+              - meta_scope: invalid.illegal
+              - match: '[\r\n]'
+                pop: true
+              - include: error_link
+              - include: error_quote
+        - match: ^\w+:\s*\*E
+          push:
+              - meta_scope: invalid.illegal
+              - match: '[\r\n]'
+                pop: true
+              - include: error_link
+              - include: error_quote
+        - match: '^Warning-\['
+          push:
+              - meta_scope: invalid.deprecated
+              - match: '^\s*[\n]'
+                pop: true
+              - include: warning_link
+              - include: warning_quote
+        - match: '^(["'']?[\w\d\:\\/\.\-\=]+\.\w+[\w\d]*["'']?\s*[,:on line\(]{1,9}\s*\d+\)?)?[^\r\n]*?(?i)warning'
+          captures:
+              1: invalid.deprecated.link
+          push:
+              - meta_scope: invalid.deprecated
+              - match: '[\r\n]'
+                pop: true
+              - include: warning_link
+              - include: warning_quote
+        - match: ^\w+:\s*\*W
+          push:
+              - meta_scope: invalid.deprecated
+              - match: '[\r\n]'
+                pop: true
+              - include: warning_link
+              - include: warning_quote
+    error_link:
+        - match: '["'']?[\w\d\:\\\/\.\-\=]+\.\w+[\w\d]*["'']?\s*[,:on line\(]{1,9}\s*\d+\)?'
+          scope: invalid.illegal.link
+    error_quote:
+        - match: '(["''])(?:(?=(\\?))\2.)*?\1'
+          scope: invalid.illegal.quote
+    warning_link:
+        - match: '["'']?[\w\d\:\\\/\.\-\=]+\.\w+[\w\d]*["'']?\s*[,:on line\(]{1,9}\s*\d+\)?'
+          scope: invalid.deprecated.link
+    warning_quote:
+        - match: '(["''])(?:(?=(\\?))\2.)*?\1'
+          scope: invalid.deprecated.quote

@@ -1,0 +1,40 @@
+{
+    "scope": "text.bbcode",
+    "completions": [{
+        "trigger": "url\tLink (url)",
+        "contents": "[url=]${$1}[/url]"
+    }, {
+        "trigger": "\tWrap Selection in Open/Close Tag",
+        "contents": "[${1:b}]$TM_SELECTED_TEXT[/${1/=.*//}]"
+    }, {
+        "trigger": "\tSize",
+        "contents": "[size=${2:1}]${1:$TM_SELECTED_TEXT}[/size]"
+    }, {
+        "trigger": "1\tOrdered List",
+        "contents": "[list=1]\n[*] $1\n[/list]"
+    }, {
+        "trigger": "\tItalic",
+        "contents": "[i]${1:$TM_SELECTED_TEXT}[/i]"
+    }, {
+        "trigger": "code\tCode (code)",
+        "contents": "[code]$1[/code]"
+    }, {
+        "trigger": "img\tImage (img)",
+        "contents": "[img]$1[/img]$0"
+    }, {
+        "trigger": "\tBold",
+        "contents": "[b]${1:$TM_SELECTED_TEXT}[/b]"
+    }, {
+        "trigger": "\tColor",
+        "contents": "[color=\"${2:red}\"]${1:$TM_SELECTED_TEXT}[/color]"
+    }, {
+        "trigger": "*\tUnordered List",
+        "contents": "[list]\n[*] $1\n[/list]"
+    }, {
+        "trigger": "quo\tQuote",
+        "contents": "[quote=$1]${2:$TM_SELECTED_TEXT}[/quote]"
+    }, {
+        "trigger": "l\tList Item",
+        "contents": "[*] $1"
+    }]
+}

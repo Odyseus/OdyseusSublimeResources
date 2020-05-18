@@ -1,0 +1,142 @@
+{
+    "scope": "source.js",
+    "completions": [{
+        "contents": "//{{IMPORTER}}\n${1}",
+        "trigger": "impl\tCinnamon - __import function placeholder"
+    }, {
+        "contents": "global.logError(${1:aErr});",
+        "trigger": "gloe\tCinnamon - Log error to Looking Glass"
+    }, {
+        "contents": "global.logWarning(${1:aErr});",
+        "trigger": "glow\tCinnamon - Log warning to Looking Glass"
+    }, {
+        "contents": "global.log(${1:aErr});",
+        "trigger": "glol\tCinnamon - Log info to Looking Glass"
+    }, {
+        "contents": "global.logTrace(${1:aErr});",
+        "trigger": "glot\tCinnamon - Log trace to Looking Glass"
+    }, {
+        "trigger": "ife\tJS - if else",
+        "contents": "if (${1:condition}) {\n    ${2:// expression}\n} else {\n    ${3:// second expression}\n}"
+    }, {
+        "trigger": "for\tJS - For loop",
+        "contents": "for (${1:let i = 0}; ${2:i < ${3:elements.length}}; ${4:i++}) {\n    ${5:// expression}\n}"
+    }, {
+        "trigger": "req\tJS - require",
+        "contents": "require(\"${1:package}\")${0};"
+    }, {
+        "trigger": "funi\tJS - Immediately invoked function expression",
+        "contents": "(function() {\n    ${0:// body...}\n})();"
+    }, {
+        "trigger": "evea\tJS - addEventListener",
+        "contents": "${1:element}.addEventListener(\"$2\", function(e) {\n    $3\n}, false);"
+    }, {
+        "trigger": "hintex\tJS - jshint /* export */",
+        "contents": "/* exported $1\n */"
+    }, {
+        "trigger": "us\tJS - use strict",
+        "contents": "\"use strict\";"
+    }, {
+        "trigger": "okfe\tJS - Object.keys...forEach",
+        "contents": "Object.keys(${1:obj}).forEach((key) => {\n    ${0:// body...}\n});"
+    }, {
+        "trigger": "ever\tJS - removeEventListener",
+        "contents": "${1:element}.removeEventListener(\"$2\", function(e) {\n    $3\n}, false);"
+    }, {
+        "trigger": "forim\tJS - For loop improved",
+        "contents": "for (let ${1:i} = ${2:elements}.length - 1; ${1:i} >= 0; ${1:i}--) {\n    ${3:// expression}\n}"
+    }, {
+        "trigger": "forc\tJS - For loop cached",
+        "contents": "let ${1:i} = 0,\n    ${1:i}Len = ${2:elements}.length;\nfor (; ${1:i} < ${1:i}Len; ${1:i}++) {\n    ${3:// expression}\n}"
+    }, {
+        "trigger": "log\tJS - Log to console",
+        "contents": "console.log(\"${1:test}\");"
+    }, {
+        "trigger": "switch\tJS - switch",
+        "contents": "switch (${1:var}) {\n    case \"$2\":\n        $3\n        break;\n    case \"$4\":\n        $5\n        break;\n}"
+    }, {
+        "trigger": "cdir\tJS - console.dir",
+        "contents": "console.dir(${1:obj});"
+    }, {
+        "trigger": "okv\tObject Value JS",
+        "contents": "${1:key}: ${0:value},"
+    }, {
+        "trigger": "stoppro\tJS - stopPropagation",
+        "contents": "aE.stopPropagation();"
+    }, {
+        "trigger": "cinf\tJS - console.info",
+        "contents": "console.info(${1:error});"
+    }, {
+        "trigger": "fori\tJS - For in loop",
+        "contents": "for (let ${1:prop} in ${2:object}) {\n    if (${2:object}.hasOwnProperty(${1:prop})) {\n        ${3:// expression}\n    }\n}"
+    }, {
+        "trigger": "seti\tJS - setInterval",
+        "contents": "setInterval(function() {\n    ${2:// body...}\n}, ${1:millis});"
+    }, {
+        "trigger": "get\tJS - Get elements",
+        "contents": "getElement${1/(T)|.*/(?1:s)/}By${1:T}${1/(T)|(I)|.*/(?1:agName)(?2:d)/}(\"$2\")"
+    }, {
+        "trigger": "cls\tClass constructor",
+        "contents": "class ${1:class_name} extends ${2:super_class_name} {\n    constructor() {\n        ${0:// body...}\n    }\n}"
+    }, {
+        "trigger": "dow\tJS - do ... while",
+        "contents": "do {\n    ${1:expression}\n} while (${2:condition});"
+    }, {
+        "trigger": "cls\tJS - Clear localStorage",
+        "contents": "localStorage.clear();"
+    }, {
+        "trigger": "sett\tJS - setTimeout",
+        "contents": "setTimeout(function() {\n    ${2:// body...}\n}, ${1:millis});"
+    }, {
+        "trigger": "cmet\tObject Method",
+        "contents": "${1:method_name}(${3:argument}) {\n    ${0:// body...}\n}"
+    }, {
+        "trigger": "hintign\tJS - jshint ignore:line",
+        "contents": "// jshint ignore:line"
+    }, {
+        "trigger": "foro\tJS - For of loop",
+        "contents": "for (let ${1:value} of ${2:iterable}) {\n    ${3:// expression}\n}"
+    }, {
+        "trigger": "cerr\tJS - console.error",
+        "contents": "console.error(${1:error});"
+    }, {
+        "trigger": "fun\tJS - Function",
+        "contents": "function ${1:methodName}(${2:arguments}) {\n    ${0:// body...}\n}"
+    }, {
+        "trigger": "pd\tJS - preventDefault()",
+        "contents": "aE.preventDefault();"
+    }, {
+        "trigger": "pe\tJS - process.exit",
+        "contents": "process.exit();"
+    }, {
+        "trigger": "me\tJS - module.exports",
+        "contents": "module.exports = ${1};"
+    }, {
+        "trigger": "clog\tJS - console.log",
+        "contents": "console.log(${1:msg});"
+    }, {
+        "trigger": "try\tJS - try {} catch {}",
+        "contents": "try {\n    $1\n} catch (aErr) {\n    $2\n}"
+    }, {
+        "trigger": "if\tJS - if",
+        "contents": "if (${1:condition}) {\n    ${2:// expression}\n}"
+    }, {
+        "trigger": "proto\tJS - Prototype",
+        "contents": "function ${1:ClassName}() {\n    this._init.apply(this, arguments);\n}\n\n${1:ClassName}.prototype = {\n    __proto__: ${2:SuperClassName}.prototype,\n\n    _init: function(aArgs) {\n        ${2:SuperClassName}.prototype._init.call(this, aArgs);\n\n    },\n};"
+    }, {
+        "trigger": "clsv\tClass constructor in var",
+        "contents": "var ${1:class_name}  = class ${1:class_name} extends ${2:super_class_name} {\n    constructor() {\n        ${0:// body...}\n    }\n};"
+    }, {
+        "trigger": "omet\tObject Method",
+        "contents": "${1:method_name}: function(${3:argument}) {\n    ${0:// body...}\n}${10:,}"
+    }, {
+        "trigger": "while\tJS - While loop",
+        "contents": "while (${1:condition}) {\n    ${2:// expression}\n}"
+    }, {
+        "trigger": "ls\tJS - localStorage",
+        "contents": "if (localStorage.${1:item}) {\n    var ${1:item} = localStorage.${1:item};\n    $2\n}"
+    }, {
+        "trigger": "rand\tJS - Random number",
+        "contents": "Math.floor(Math.random() * ${1:10});"
+    }]
+}

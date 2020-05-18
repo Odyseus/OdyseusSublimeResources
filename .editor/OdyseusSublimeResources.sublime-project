@@ -1,0 +1,35 @@
+{
+    "folders": [{
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": "../../OdyseusSublimePlugins"
+    }, {
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": ".."
+    }, {
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": "../../MarkdownEditingFork"
+    }, {
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": "../../RestructuredTextEditing"
+    }, {
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": "../../SublimeLinter-OdyseusLinters"
+    }, {
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": "../../SublimePythonJediFork"
+    }, {
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": "../../Theme - Default"
+    }, {
+        "file_exclude_patterns": [],
+        "folder_exclude_patterns": [],
+        "path": "../../../Lib/python3.3/python_utils"
+    }]
+}

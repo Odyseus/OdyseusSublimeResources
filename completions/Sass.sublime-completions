@@ -1,0 +1,304 @@
+{
+    "scope": "source.sass, source.scss",
+    "completions": [{
+        "trigger": "hsl\thsl() creates a Color from hue, saturation, and lightness values",
+        "contents": "hsl(${1:hue}, ${2:saturation}, ${3:lightness})"
+    }, {
+        "trigger": "unl\tunitless() returns whether a number has units",
+        "contents": "unitless(${1:number})"
+    }, {
+        "trigger": "i\tif() returns one of two values, depending on whether or not $condition is true. Just like in @if, all values other than false and null are considered to be true",
+        "contents": "@if(${1:condition}, $if-true, $if-false)"
+    }, {
+        "trigger": "for\t@for",
+        "contents": "@for ${1:i} from 1 through 3 {\n    .item-#{$i} {\n    \n    }\n}"
+    }, {
+        "trigger": "ext\textend",
+        "contents": "@extend .${1:ex};"
+    }, {
+        "trigger": "grs\tgrayscale() converts a color to grayscale",
+        "contents": "grayscale(${1:color})"
+    }, {
+        "trigger": "ins\tinspect() returns the string representation of a value as it would be represented in Sass",
+        "contents": "inspect(${1:value})"
+    }, {
+        "trigger": "hue\thue() gets the hue component of a color",
+        "contents": "hue(${1:color})"
+    }, {
+        "trigger": "fe\tfeature-exists() returns whether a feature exists in the current Sass runtime",
+        "contents": "feature-exists(${1:feature})"
+    }, {
+        "trigger": "fd\tfade-in() makes a color more opaque",
+        "contents": "fade-in(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "se\tselector-extend() extends $extendee with $extender within $selector",
+        "contents": "selector-extend(${1:selector}, ${2:extendee}, ${3:extender})"
+    }, {
+        "trigger": "ac\tadjust-color() increases or decreases one or more components of a color",
+        "contents": "adjust-color(${1:color}, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])"
+    }, {
+        "trigger": "ge\tglobal-variable-exists() returns whether a variable with the given name exists in the global scope",
+        "contents": "global-variable-exists(${1:variable})"
+    }, {
+        "trigger": "ve\tvariable-exists() returns whether a variable with the given name exists in the current scope",
+        "contents": "variable-exists(${1:variable})"
+    }, {
+        "trigger": "mh\tmap-has-key() returns whether a map has a value associated with a given key",
+        "contents": "map-has-key(${1:map}, ${2:key})"
+    }, {
+        "trigger": "sti\tstr-insert() inserts $insert into $string at $index",
+        "contents": "str-insert(${1:string}, ${2:insert}, ${3:index})"
+    }, {
+        "trigger": "ty\ttype-of() returns the type of a value",
+        "contents": "type-of(${1:value})"
+    }, {
+        "trigger": "ce\tceil() rounds a number up to the next whole number",
+        "contents": "ceil(${1:number})"
+    }, {
+        "trigger": "mi\tmin() finds the minimum of several numbers",
+        "contents": "min(${1:number})"
+    }, {
+        "trigger": "ma\tmax() finds the maximum of several numbers",
+        "contents": "max(${1:number})"
+    }, {
+        "trigger": "sa\tselector-append() appends selectors to one another without spaces in between",
+        "contents": "selector-append(${1:selectors})"
+    }, {
+        "trigger": "lgt\tlightness() gets the lightness component of a color",
+        "contents": "lightness(${1:color})"
+    }, {
+        "trigger": "dk\tdarken() makes a color darker",
+        "contents": "darken(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "de\t@debug",
+        "contents": "@debug ${1:debug};"
+    }, {
+        "trigger": "inc\tinclude",
+        "contents": "@include ${1:mixin}();"
+    }, {
+        "trigger": "rd\trandom() returns a random number",
+        "contents": "random(${1:limit})"
+    }, {
+        "trigger": "tu\tto-upper-case() converts a string to upper case",
+        "contents": "to-upper-case(${1:string})"
+    }, {
+        "trigger": "me\tmixin-exists() returns whether a mixin with the given name exists",
+        "contents": "mixin-exists(${1:mixin})"
+    }, {
+        "trigger": "sn\tselector-nest() nests selector beneath one another like they would be nested in the stylesheet",
+        "contents": "selector-nest(${1:selectors})"
+    }, {
+        "trigger": "ea\t@each",
+        "contents": "@each ${1:key}, ${2:var} in $map[item1, item2, item3...] {\n    .#{$key} {\n\n    }\n}"
+    }, {
+        "trigger": "mv\tmap-values() returns a list of all values in a map",
+        "contents": "map-values(${1:map})"
+    }, {
+        "trigger": "sp\tselector-parse() parses a selector into the format returned by &",
+        "contents": "selector-parse(${1:selector})"
+    }, {
+        "trigger": "op\topacify() makes a color more opaque",
+        "contents": "opacify(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "ls\tlist-separator() returns the separator of a list",
+        "contents": "list-separator(${1:separator})"
+    }, {
+        "trigger": "mr\tmap-remove() returns a new map with keys removed",
+        "contents": "map-remove(${1:map}, ${1:keys})"
+    }, {
+        "trigger": "key\tkeywords() returns the keywords passed to a function that takes variable arguments",
+        "contents": "keywords(${1:args})"
+    }, {
+        "trigger": "sr\tselector-replace() replaces $original with $replacement within $selector",
+        "contents": "selector-replace(${1:selector}, ${2:original}, ${3:replacement})"
+    }, {
+        "trigger": "sluni\tselector-unify() unifies two selectors to produce a selector that matches elements matched by both",
+        "contents": "selector-unify(${1:selector1}, ${2:selector2})"
+    }, {
+        "trigger": "stn\tset-nth() replaces the nth item in a list",
+        "contents": "set-nth(${1:list}, ${2:n}, ${3:value})"
+    }, {
+        "trigger": "dst\tdesaturate() makes a color less satured",
+        "contents": "desaturate(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "ife\t@if",
+        "contents": "@if something == true {\n\n} @else if 0 < 1 {\n\n} @else {\n\n}"
+    }, {
+        "trigger": "ste\tsaturate() makes a color more satured",
+        "contents": "saturate(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "iv\tinvert() returns the inverse of a color",
+        "contents": "invert(${1:color})"
+    }, {
+        "trigger": "sts\tstr-slice() extracts a substring from $string",
+        "contents": "str-slice(${1:string}, ${2:start}, ${3:end})"
+    }, {
+        "trigger": "sc\tscale-color() fluidly scales one or more properties of a color",
+        "contents": "scale-color(${1:color}, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha])"
+    }, {
+        "trigger": "pr\tpercentage() converts a unitless number to a percentage",
+        "contents": "percentage(${1:number})"
+    }, {
+        "trigger": "nth\tnth() returns a specific item in a list",
+        "contents": "nth(${1:list}, ${2:n})"
+    }, {
+        "trigger": "op\topacity() gets the alpha component (opacity) of a color",
+        "contents": "opacity(${1:color})"
+    }, {
+        "trigger": "!d\t!default",
+        "contents": "!default"
+    }, {
+        "trigger": "cpm\tcomplement() returns the complement of a color",
+        "contents": "complement(${1:color})"
+    }, {
+        "trigger": "mix\t@mixin",
+        "contents": "// Name ${1:name}\n// Desc\n// Return\n@mixin ${1:name}() {\n    @content;\n}"
+    }, {
+        "trigger": "jo\tjoin() together two lists into one",
+        "contents": "join(${1:list}, ${2:list2}, ${3:separator})"
+    }, {
+        "trigger": "er\t@error",
+        "contents": "@error 'fatal error';"
+    }, {
+        "trigger": "rgb\trgb() creates a Color from red, green, and blue values",
+        "contents": "rgb(${1:red}, ${2:green}, ${3:blue})"
+    }, {
+        "trigger": "rgba\trgba() creates a Color from red, green, blue and alpha values",
+        "contents": "rgba(${1:red}, ${2:green}, ${3:blue}, ${4:alpha})"
+    }, {
+        "trigger": "bl\tblue() gets the blue component of a color",
+        "contents": "blue(${1:color})"
+    }, {
+        "trigger": "red\tred() gets the red component of a color",
+        "contents": "red(${1:color})"
+    }, {
+        "trigger": "$\t$variable",
+        "contents": "${1:var}: ${2:val};"
+    }, {
+        "trigger": "lg\tlighten() makes a color lighter",
+        "contents": "lighten(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "al\talpha() gets the alpha component (opacity) of a color",
+        "contents": "alpha(${1:color})"
+    }, {
+        "trigger": "st\tsaturation() gets the saturation component of a color",
+        "contents": "saturation(${1:color})"
+    }, {
+        "trigger": "tl\tto-lower-case() converts a string to lower case",
+        "contents": "to-lower-case(${1:string})"
+    }, {
+        "trigger": "fne\tfunction-exists() returns whether a function with the given name exists",
+        "contents": "function-exists(${1:function})"
+    }, {
+        "trigger": "mk\tmap-keys() returns a list of all keys in a map",
+        "contents": "map-keys(${1:map})"
+    }, {
+        "trigger": "fun\t@function",
+        "contents": "// Name ${1:name}\n// Desc\n// Return\n@function ${1:name}() {\n    @warn 'warn me';\n    @return false;\n}"
+    }, {
+        "trigger": "zip\tzip() combines several lists into a single multidimensional list",
+        "contents": "zip(${1:lists})"
+    }, {
+        "trigger": "qt\tquote() adds quotes to a string",
+        "contents": "quote(${1:string})"
+    }, {
+        "trigger": "ih\tie-hex-str() converts a color into the format understood by IE filters",
+        "contents": "ie-hex-str(${1:color})"
+    }, {
+        "trigger": "hsla\thsla() creates a Color from hue, saturation, lightness, and alpha values",
+        "contents": "hsla(${1:hue}, ${2:saturation}, ${3:lightness}, ${4:alpha})"
+    }, {
+        "trigger": "stl\tstr-length() returns the number of characters in a string",
+        "contents": "str-length(${1:string})"
+    }, {
+        "trigger": "imp\t@import",
+        "contents": "@import '${1:this}';"
+    }, {
+        "trigger": "fdo\tfade-out() makes a color more transparent",
+        "contents": "fade-out(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "lt\t$var: list",
+        "contents": "${1:list}: list1 list2 list2;"
+    }, {
+        "trigger": "mp\t$map: ()",
+        "contents": "${1:map}: (\n    item1: 0\n);"
+    }, {
+        "trigger": "in\tindex() returns the position of a value within a list",
+        "contents": "index(${1:list}, ${2:val})"
+    }, {
+        "trigger": "is\tis-superselector() returns whether $super matches all the elements $sub does, and possibly more",
+        "contents": "is-superselector(${1:super}, ${2:sub})"
+    }, {
+        "trigger": "tr\ttransparentize() makes a color more transparent",
+        "contents": "transparentize(${1:color}, ${2:amount})"
+    }, {
+        "trigger": "wr\t@warn",
+        "contents": "@warn 'warning must be inside of function, do not forget this'"
+    }, {
+        "trigger": "mix\tmix() mixes two colors together",
+        "contents": "mix(${1:color}, ${2:color2}, ${3:weight})"
+    }, {
+        "trigger": "stx\tstr-index() inserts the index of the first occurrence of $substring in $string",
+        "contents": "str-index(${1:string}, ${2:substring})"
+    }, {
+        "trigger": "ss\tsimple-selectors() returns the simple selectors that comprise a compound selector",
+        "contents": "simple-selectors(${1:selector})"
+    }, {
+        "trigger": "vd\t$variable: $val !default",
+        "contents": "${1:var}: ${2:val} !default;"
+    }, {
+        "trigger": "cc\tchange-color() changes one or more properties of a color",
+        "contents": "change-color(${1:color}, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])"
+    }, {
+        "trigger": "cp\tcomparable() returns whether two numbers can be added, subtracted, or compared",
+        "contents": "comparable(${1:number1}, ${2:number2})"
+    }, {
+        "trigger": "gr\tgreen() gets the green component of a color",
+        "contents": "green(${1:color})"
+    }, {
+        "trigger": "ap\tappend() appends a single value onto the end of a list",
+        "contents": "append(${1:list}, ${2:val}, ${3:separator})"
+    }, {
+        "trigger": "mg\tmap-get() returns the value in a map associated with a given key",
+        "contents": "map-get(${1:map}, ${2:key})"
+    }, {
+        "trigger": "ab\tabs() returns the absolute value of a number",
+        "contents": "abs(${1:number})"
+    }, {
+        "trigger": "mmg\tmap-merge() merges two maps together into a new map",
+        "contents": "map-merge(${1:map1}, ${2:map2})"
+    }, {
+        "trigger": "if\t@if()",
+        "contents": "@if(${1:condition}, $if-true, $if-false) {\n\n}"
+    }, {
+        "trigger": "ui\tunique-id() returns a unique CSS identifier",
+        "contents": "unique-id()"
+    }, {
+        "trigger": "fl\tfloor() rounds a number down to the previous whole number",
+        "contents": "floor(${1:number})"
+    }, {
+        "trigger": "ln\tlength() return the length of a list",
+        "contents": "length(${1:list})"
+    }, {
+        "trigger": "uq\tunquote() removes quotes from a string",
+        "contents": "unquote(${1:string})"
+    }, {
+        "trigger": "wh\t@while",
+        "contents": "@while ${1:i} > 0 {\n    .item-#{$i} {\n\n    }\n}"
+    }, {
+        "trigger": "ca\tcall() dynamically calls a Sass function",
+        "contents": "call(${1:name}, ${2:args})"
+    }, {
+        "trigger": "ah\tadjust-hue() changes the hue of a color",
+        "contents": "adjust-hue(${1:color}, ${2:degrees})"
+    }, {
+        "trigger": "ro\tround() rounds a number to the nearest whole number",
+        "contents": "round(${1:number})"
+    }, {
+        "trigger": "un\tunit() returns the unit(s) associated with a number",
+        "contents": "unit(${1:number})"
+    }, {
+        "trigger": "at\t@at-root",
+        "contents": "@at-root {\n     ${1:class} {  }\n     ${2:class2} {  }\n}"
+    }]
+}
